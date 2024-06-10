@@ -19,9 +19,4 @@ negative, or neutral, thereby providing valuable insights into customer opinions
 ![SpacyTextBlob Version](https://img.shields.io/badge/spacytextblob-v4.0.0-blue)
 
   
-![My Image](<img width="768" alt="Screenshot 2024-06-10 at 23 54 35" src="https://github.com/EroldGjoka/Sentiment_Analysis/assets/162522371/e5a24abc-3cf2-4591-a160-824de64b4ddd">)
-
-
-<p align="center">
-  <img src="<img width="768" alt="Screenshot 2024-06-10 at 23 54 35" src="https://github.com/EroldGjoka/Sentiment_Analysis/assets/162522371/e5a24abc-3cf2-4591-a160-824de64b4ddd">" alt="My Image" width="400"/>
-</p>
+<img width="768" alt="Screenshot 2024-06-10 at 23 54 35" src="https://github.com/EroldGjoka/Sentiment_Analysis/assets/162522371/e5a24abc-3cf2-4591-a160-824de64b4ddd">
