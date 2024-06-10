@@ -18,5 +18,34 @@ negative, or neutral, thereby providing valuable insights into customer opinions
 ![Python Version](https://img.shields.io/badge/python-v3.12.2-blue)
 ![SpacyTextBlob Version](https://img.shields.io/badge/spacytextblob-v4.0.0-blue)
 
+
+### Modules and Functions
+
+- **pandas:** For data manipulation and analysis.
+- **spacy:** For advanced NLP tasks.
+- **spacytextblob:** For sentiment analysis.
+
+#### Custom Function: `preprocess_text`
+
+This function performs several preprocessing tasks:
+- Converts text to lowercase.
+- Removes punctuation, numbers, and named entities.
+- Retains important stop words crucial for sentiment analysis.
+- Lemmatizes tokens to their base forms.
+
+```python
+import spacy
+from spacytextblob.spacytextblob import SpacyTextBlob
+
+# Load Spacy model and add SpacyTextBlob
+nlp = spacy.load('en_core_web_sm')
+nlp.add_pipe('spacytextblob')
+
+def preprocess_text(text):
+    # Custom text preprocessing steps
+    doc = nlp(text)
+    tokens = [token.lemma_ for token in doc if not token.is_stop and not token.is_punct and token.is_alpha]
+    return " ".join(tokens)
+'''
   
 <img width="768" alt="Screenshot 2024-06-10 at 23 54 35" src="https://github.com/EroldGjoka/Sentiment_Analysis/assets/162522371/e5a24abc-3cf2-4591-a160-824de64b4ddd">
