@@ -25,7 +25,7 @@ negative, or neutral, thereby providing valuable insights into customer opinions
 - **spacy:** For advanced NLP tasks.
 - **spacytextblob:** For sentiment analysis.
 
-#### Custom Function: `preprocess_text`
+#### Custom Function: `preprocess`
 
 This function performs several preprocessing tasks:
 - Converts text to lowercase.
@@ -33,22 +33,18 @@ This function performs several preprocessing tasks:
 - Retains important stop words crucial for sentiment analysis.
 - Lemmatizes tokens to their base forms.
 
-```python
-# Text preprocessing function
-def preprocess(text):
 
-    if isinstance(text, str):
-        text = text.replace("n't", "not")
+#### Custom Function: `sentiment_analysis
 
-        doc = nlp(text)
+The sentiment_analysis function performs sentiment analysis on a specific
+review within the dataset. It utilizes Spacy and SpacyTextBlob to process
+the review and determine its sentiment score
 
-        no_stop_words = []
-        for token in doc:
-            if token.is_stop or token.is_punct or token.ent_type_ or not token.is_alpha:
-                continue
-            no_stop_words.append(token.lemma_)
-        return " ".join(no_stop_words)
-    return text
-```
+#### PDF Report
+
+[Download the Sentiment Analysis Report](Sentiment_Analysis/sentiment_analysis_report.pdf)
+
+
+#### Metric results on 3 observations
   
 <img width="768" alt="Screenshot 2024-06-10 at 23 54 35" src="https://github.com/EroldGjoka/Sentiment_Analysis/assets/162522371/e5a24abc-3cf2-4591-a160-824de64b4ddd">
