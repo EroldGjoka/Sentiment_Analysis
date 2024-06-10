@@ -1,7 +1,7 @@
 <div align="center">
   <br>
   <h1>📊 Sentiment Analysis Using SpaCy</h1>
-  <strong>Basic Natural Language Processing (NLP) Project</strong>
+  <strong>Beginner Natural Language Processing (NLP) Project</strong>
 </div>
 <br>
 
@@ -19,3 +19,8 @@ negative, or neutral, thereby providing valuable insights into customer opinions
 ![SpacyTextBlob Version](https://img.shields.io/badge/spacytextblob-v4.0.0-blue)
 
   
+![My Image](Desktop/Screenshot 2024-06-10 at 23.54.35.png)
+
+<p align="center">
+  <img src="Desktop/Screenshot 2024-06-10 at 23.54.35.png" alt="My Image" width="400"/>
+</p>
