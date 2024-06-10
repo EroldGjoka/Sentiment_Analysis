@@ -34,7 +34,7 @@ This function performs several preprocessing tasks:
 - Lemmatizes tokens to their base forms.
 
 
-#### Custom Function: `sentiment_analysis
+#### Custom Function: `sentiment_analysis`
 
 The sentiment_analysis function performs sentiment analysis on a specific
 review within the dataset. It utilizes Spacy and SpacyTextBlob to process
@@ -42,7 +42,7 @@ the review and determine its sentiment score
 
 #### PDF Report
 
-[Download the Sentiment Analysis Report](Sentiment_Analysis/sentiment_analysis_report.pdf)
+[Sentiment_Analysis/sentiment_analysis_report.pdf](https://github.com/EroldGjoka/Sentiment_Analysis/blob/main/sentiment_analysis_report.pdf)
 
 
 #### Metric results on 3 observations
