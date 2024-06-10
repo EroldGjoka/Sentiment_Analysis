@@ -34,18 +34,21 @@ This function performs several preprocessing tasks:
 - Lemmatizes tokens to their base forms.
 
 ```python
-import spacy
-from spacytextblob.spacytextblob import SpacyTextBlob
+# Text preprocessing function
+def preprocess(text):
 
-# Load Spacy model and add SpacyTextBlob
-nlp = spacy.load('en_core_web_sm')
-nlp.add_pipe('spacytextblob')
+    if isinstance(text, str):
+        text = text.replace("n't", "not")
 
-def preprocess_text(text):
-    # Custom text preprocessing steps
-    doc = nlp(text)
-    tokens = [token.lemma_ for token in doc if not token.is_stop and not token.is_punct and token.is_alpha]
-    return " ".join(tokens)
-'''
+        doc = nlp(text)
+
+        no_stop_words = []
+        for token in doc:
+            if token.is_stop or token.is_punct or token.ent_type_ or not token.is_alpha:
+                continue
+            no_stop_words.append(token.lemma_)
+        return " ".join(no_stop_words)
+    return text
+```
   
 <img width="768" alt="Screenshot 2024-06-10 at 23 54 35" src="https://github.com/EroldGjoka/Sentiment_Analysis/assets/162522371/e5a24abc-3cf2-4591-a160-824de64b4ddd">
