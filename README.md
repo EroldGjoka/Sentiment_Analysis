@@ -1,7 +1,7 @@
 <div align="center">
   <br>
   <h1>📊 Sentiment Analysis Using SpaCy</h1>
-  <strong>GitHub repo with beginner-friendly problems in Python</strong>
+  <strong>Basic Natural Language Processing (NLP) Project</strong>
 </div>
 <br>
 
