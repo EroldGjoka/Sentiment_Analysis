@@ -9,7 +9,7 @@ import pandas as pd
 from spacytextblob.spacytextblob import SpacyTextBlob
 
 
-# Load Dataset
+# Load Amazon Dataset
 df = pd.read_csv("amazon_product_reviews.csv")
 
 
